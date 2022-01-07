@@ -4,7 +4,7 @@
 #
 Name     : pypi-docutils
 Version  : 0.18.1
-Release  : 78
+Release  : 79
 URL      : https://files.pythonhosted.org/packages/57/b1/b880503681ea1b64df05106fc7e3c4e3801736cf63deffc6fa7fc5404cf5/docutils-0.18.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/57/b1/b880503681ea1b64df05106fc7e3c4e3801736cf63deffc6fa7fc5404cf5/docutils-0.18.1.tar.gz
 Summary  : Docutils -- Python Documentation Utilities
@@ -14,6 +14,9 @@ Requires: pypi-docutils-bin = %{version}-%{release}
 Requires: pypi-docutils-python = %{version}-%{release}
 Requires: pypi-docutils-python3 = %{version}-%{release}
 BuildRequires : buildreq-distutils3
+Provides: docutils
+Provides: docutils-python
+Provides: docutils-python3
 
 %description
 into useful formats, such as HTML, XML, and LaTeX.  For
