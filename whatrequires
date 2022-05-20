@@ -1,2 +1,19 @@
 # This file contains recursive sources that require this package
+alsa-utils
+arandr
+automake
+bluez
+ctags
+igt-gpu-tools
+iwd
+libdrm
+liblogging
+librsvg
+libvirt
+mercurial
+openvpn
+pypi-seqdiag
+rdma-core
+rsyslog
+swupd-client
 virt-manager
