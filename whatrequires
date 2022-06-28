@@ -3,6 +3,7 @@ alsa-utils
 arandr
 automake
 bluez
+cifs-utils
 ctags
 igt-gpu-tools
 iwd
@@ -12,6 +13,7 @@ librsvg
 libvirt
 mercurial
 openvpn
+pipewire
 pypi-seqdiag
 rdma-core
 rsyslog
