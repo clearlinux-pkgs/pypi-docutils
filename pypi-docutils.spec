@@ -4,7 +4,7 @@
 #
 Name     : pypi-docutils
 Version  : 0.19
-Release  : 85
+Release  : 86
 URL      : https://files.pythonhosted.org/packages/6b/5c/330ea8d383eb2ce973df34d1239b3b21e91cd8c865d21ff82902d952f91f/docutils-0.19.tar.gz
 Source0  : https://files.pythonhosted.org/packages/6b/5c/330ea8d383eb2ce973df34d1239b3b21e91cd8c865d21ff82902d952f91f/docutils-0.19.tar.gz
 Summary  : Docutils -- Python Documentation Utilities
