@@ -5,6 +5,8 @@ automake
 bluez
 cifs-utils
 ctags
+gdk-pixbuf
+gtk4
 igt-gpu-tools
 iwd
 libdrm
