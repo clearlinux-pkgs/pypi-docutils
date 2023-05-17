@@ -4,10 +4,10 @@
 # Using build pattern: distutils3
 #
 Name     : pypi-docutils
-Version  : 0.20
-Release  : 92
-URL      : https://files.pythonhosted.org/packages/e6/a9/8ddfaa7a9414e42520e0041d1354ebda699e4eb1b47e2f1b6d8bda66aba6/docutils-0.20.tar.gz
-Source0  : https://files.pythonhosted.org/packages/e6/a9/8ddfaa7a9414e42520e0041d1354ebda699e4eb1b47e2f1b6d8bda66aba6/docutils-0.20.tar.gz
+Version  : 0.20.1
+Release  : 93
+URL      : https://files.pythonhosted.org/packages/1f/53/a5da4f2c5739cf66290fac1431ee52aff6851c7c8ffd8264f13affd7bcdd/docutils-0.20.1.tar.gz
+Source0  : https://files.pythonhosted.org/packages/1f/53/a5da4f2c5739cf66290fac1431ee52aff6851c7c8ffd8264f13affd7bcdd/docutils-0.20.1.tar.gz
 Summary  : Docutils -- Python Documentation Utilities
 Group    : Development/Tools
 License  : BSD-2-Clause BSD-3-Clause GPL-2.0 Public-Domain Python-2.0
@@ -15,18 +15,19 @@ Requires: pypi-docutils-bin = %{version}-%{release}
 Requires: pypi-docutils-python = %{version}-%{release}
 Requires: pypi-docutils-python3 = %{version}-%{release}
 BuildRequires : buildreq-distutils3
+BuildRequires : pypi(py)
+BuildRequires : pypi-pluggy
+BuildRequires : pypi-pytest
+BuildRequires : pypi-tox
+BuildRequires : pypi-virtualenv
 # Suppress stripping binaries
 %define __strip /bin/true
 %define debug_package %{nil}
 
 %description
 .. include:: docs/header0.txt
-=======================
-=======================
-:Author: David Goodger
-:Contact: goodger@python.org
-:Date: $Date: 2023-05-09 19:55:19 +0200 (Di, 09. Mai 2023) $
-:Web site: https://docutils.sourceforge.io/
+=========================
+=========================
 
 %package bin
 Summary: bin components for the pypi-docutils package.
@@ -56,10 +57,10 @@ python3 components for the pypi-docutils package.
 
 
 %prep
-%setup -q -n docutils-0.20
-cd %{_builddir}/docutils-0.20
+%setup -q -n docutils-0.20.1
+cd %{_builddir}/docutils-0.20.1
 pushd ..
-cp -a docutils-0.20 buildavx2
+cp -a docutils-0.20.1 buildavx2
 popd
 
 %build
@@ -67,7 +68,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1683729209
+export SOURCE_DATE_EPOCH=1684338022
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
 export FCFLAGS="$FFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
