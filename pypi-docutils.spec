@@ -5,7 +5,7 @@
 #
 Name     : pypi-docutils
 Version  : 0.20.1
-Release  : 94
+Release  : 95
 URL      : https://files.pythonhosted.org/packages/1f/53/a5da4f2c5739cf66290fac1431ee52aff6851c7c8ffd8264f13affd7bcdd/docutils-0.20.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/1f/53/a5da4f2c5739cf66290fac1431ee52aff6851c7c8ffd8264f13affd7bcdd/docutils-0.20.1.tar.gz
 Summary  : Docutils -- Python Documentation Utilities
